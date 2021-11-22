@@ -1,5 +1,5 @@
 {
-  "name": "express-js-crud-programingwithmosh",
+  "name": "ExpressJS-CRUD-programmingwithmosh",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -7,10 +7,20 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon ."
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maksudur-rahman-maruf/ExpressJS-CRUD-programmingwithmosh.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maksudur-rahman-maruf/ExpressJS-CRUD-programmingwithmosh/issues"
+  },
+  "homepage": "https://github.com/maksudur-rahman-maruf/ExpressJS-CRUD-programmingwithmosh#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "joi": "^17.4.2",
+    "nodemon": "^2.0.15"
   }
 }

@@ -85,6 +85,16 @@ app.put('/api/employees/:id', (req, res) => {
 
 });
 
+app.delete('/api/employees/:id', (req, res) => {
+    const employee = employees.find(emp => emp.id === parseInt(req.params.id));
+    if (!employee) return res.status(404).send('The Employee with the given ID was not found!');
+
+    const index = employees.indexOf(employee);
+    employees.splice(index, 1);
+
+    res.send(employee);
+});
+
 
 const port = process.env.PORT || 4000;
 
